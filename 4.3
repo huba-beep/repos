@@ -1,0 +1,31 @@
+#include<iostream>
+#define _USE_MATH_DEFINES
+#include<math.h>
+using namespace std;
+int pryam(int a, int b) {
+return a * b;
+}
+int trian(int c, int h) {
+return c * h * 0.5;
+}
+double circle(int r) {
+return M_PI * pow(r, 2);
+}
+void main() {
+int a, b, S;
+double s1;
+setlocale(LC_ALL, "");
+cout « "Введите длину и ширину прямоугольника :";
+cin » a » b;
+cout « endl « "Площадь прямоугольника равна ";
+S = pryam(a, b);
+cout « S « endl « "Введите размеры стороны и вершины :";
+cin » a » b;
+S = trian(a, b);
+cout « endl « "Площадь треугольника равна " « S « endl;
+cout « "Введите радиус";
+cin » a;
+s1 =circle(a);
+cout « "Площадь круга равна " « s1;
+return;
+}
